@@ -1,4 +1,7 @@
 package com.txi.olloama.teacher.vocabulary.dto;
 
-public class EnglishVocabularyDTO {
+import java.util.List;
+
+public record EnglishVocabularyDTO(String source, String vocabulary, List<SentenceDTO> sentences, List<SentenceDTO> saetze,
+                                   String description, String german, String synonyms) {
 }
